@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> {{data.titulo}} </title> 
+    </head>
+
+    <body>
+        <h1> {{ data.bienvenido }} </h1>
+        <ul>
+            {% for c in data.cursos %}
+            <li> {{c}} </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
